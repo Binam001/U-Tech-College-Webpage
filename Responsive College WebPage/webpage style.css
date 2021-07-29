@@ -1,0 +1,558 @@
+*{margin:0;
+    padding:0;
+    text-decoration: none;
+}
+.college-name{display: flex;}
+.college-name .logo{
+    background-image: url("images/logo.jpg");
+    background-size: 100% 100%;
+    width: 250px; height: 200px;
+}
+.college-name .name{
+    width: 100%;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 40px;
+    padding-top: 40px;
+}   
+.college-name h6{
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 5px;
+    color: black;
+    text-align: center;
+}
+.college-name h6 a{
+    color: black;
+}
+.college-name h6 a:hover{
+    color: red;
+}
+
+.slider-box{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: rgba(209, 197, 197,0.4);
+}
+.image-slider{
+    width: 70%;
+    height: 400px;
+    position: absolute;
+    left: 15%;
+    background-image: url("images/slider0.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slider 15s infinite linear;
+}
+@keyframes slider{
+    0%{background-image: url("images/slider0.jpg");}
+    20%{background-image: url("images/slider1.jpg");}
+    40%{background-image: url("images/slider2.jpg");}
+    60%{background-image: url("images/slider3.jpg");}
+    80%{background-image: url("images/slider4.jpg");}
+}
+
+
+.navbar{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(86, 16, 165);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.navbar .menu li{
+    display:inline-flex;
+    margin: 0 20px;
+    justify-content: space-around;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 25px;
+    padding-top: 4px;
+    text-align: center;
+}
+.navbar .menu input{
+    padding: 3px;
+}
+
+
+
+.home-body{display: flex;
+    position: relative;
+    padding: 0 10px;
+}
+
+.home-body .adm-img{
+    background-image: url("images/slider1.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    width: 6000px;
+    height: 500px;
+}
+.home-body .apply{
+    width: 100px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 5px;
+    position: absolute;
+    left: 23%;
+    top: 397px;
+    transition: all 0.3s ease;
+}
+.home-body .apply:hover{
+    background: white;
+    color: red;
+    border: 2px solid red;
+}
+.home-body .join{
+    padding-left: 10px;
+    position: absolute;
+    color:white;
+    background: rgb(44, 44, 164) !important;
+    font-size: 20px;
+    font-weight: 600;
+    background: none;
+    left: 133px;
+    top: 90px;
+    transition: all 0.3s ease;
+}
+.home-body .join:hover{
+    color: red;
+}
+.home-body .intro{
+    padding:4px 20px;
+}
+
+.home-body .intro h1{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 30px;
+}
+.home-body .intro p{
+    text-align: justify;
+}
+.home-body .intro a:hover{
+    color: red;
+}
+.home-body .intro p, ul li{
+    font-size: 18px;
+}
+
+
+.admission{
+    height: 300px;
+}
+.admission b{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.admission h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    animation: adm 0.6s infinite linear;
+}
+@keyframes adm{
+    0%{color: black;}
+    35%{color: red;}
+    75%{color: blue;}
+}
+.admission p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+.admission h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.admission button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 15px;
+    font-size: 25px;
+    font-weight: 700;
+    background: rgb(86, 16, 165);
+    color: white;
+    margin-top: 40px;
+    border:4px solid rgb(50, 50, 132);
+    border-radius: 10px;
+}
+.admission button:hover{
+    cursor: pointer;
+    border:2px solid white;
+    background: blue;
+}
+.admission form{
+    background: white;
+    position:absolute;
+    left: 20%;
+    top: 140vh;
+    width: 60%;
+    height: 100vh;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 0 20px;
+    overflow: scroll;
+    box-shadow:50px 50px 1000px 200px #888888;
+    display: none;
+}
+.admission form .sicky-popup-bar{
+    margin: 0 -20px;
+    padding: 10px 0;
+    background: rgb(245, 235, 235);
+    position: sticky;
+    top: 0;
+}
+.admission form b{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    color: red;
+}
+.admission form span{
+    font-size: 25px;
+    font-weight: 550;
+}
+.admission form .be{
+    width: 10%;
+}
+.admission form input{
+    width: 100%;
+    margin: 5px;
+}
+.admission form .browse{
+    width: 80px;
+    cursor: pointer;
+}
+
+.admission form .submit{
+    font-size: 20px;
+    width: 120px;
+    padding: 3px 10px;
+    margin-left: 42%;
+    background: #18e618;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 206, 0);
+}
+.admission form .submit:hover{
+    border: 2px solid white;
+}
+
+.course{
+    height: 500px;
+}
+.course p{
+    text-align: justify;
+    padding: 20px 10px;
+    font-size: 20px;
+}
+.course b{
+    padding: 20px 10px;
+    font-size: 30px;
+}
+.course table{
+    position: absolute;
+    font-size: 22px;
+    border: 2px solid black;
+    padding: 2px;
+    margin-top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.course td, th{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+.course table a{
+    color: black;
+}
+.course table a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.event{
+    width: 100%;
+    height: 600px;
+    margin-top: 20px;
+}
+.event h1{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 30px;
+}
+
+.eslider-box{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.event-slider{
+    width: 70%;
+    height: 500px;
+    position: absolute;
+    left: 15%;
+    background-image: url("images/event0.jpg");
+    background-size: 100% 100%;
+    animation: eslider 15s infinite linear;
+}
+@keyframes eslider{
+    0%{background-image: url("images/event0.jpg"); background-size: 100% 100%;}
+    20%{background-image: url("images/event1.jpg"); background-size: 100% 100%; }
+    40%{background-image: url("images/event2.jpg"); background-size: 100% 100%; }
+    60%{background-image: url("images/event3.jpg"); background-size: 100% 100%; }
+    80%{background-image: url("images/event4.jpg"); background-size: 100% 100%; }
+}
+
+
+.contact{color: white;
+    padding: 10px 20px;
+    display: flex;
+    background: #0c223f;
+    position: relative;
+}
+
+.contact b{
+    font-size: 25px;
+}
+.contact ul li{
+    list-style-type: none;
+}  
+.contact ul li a{
+    color: white;
+}
+.contact ul li a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.left-contact{
+    margin-left: 20px;
+}
+
+.right-contact{
+    margin-left: 50px;
+    display: flex;
+}
+.right-contact::before, .right-contact::after{
+    content: "";
+    position: absolute;
+    top: 15px;
+    bottom: 15px;
+    width: 1px;
+    border-left: 2px solid #00acc8;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+   
+.fa-facebook {
+    color:  #3B5998;
+}
+.fa:hover {
+      background-color: #3B5998 ;
+      color: white;
+}
+ 
+.fa-google {
+    color: #dd4b39;
+}
+.fa-google:hover{
+    background: #dd4b39;
+    color: white;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1280px){
+    .college-name .name{
+    font-size: 45px;
+    margin-left: 5%;
+    }
+    .college-name h6{
+        text-align: center;
+    }
+    .navbar .menu li{
+        display:inline-flex;
+        margin: 0 20px;
+        justify-content: space-around;
+    }
+    .navbar .menu li a{
+        color: white;
+        font-size: 25px;
+        padding-top: 6px;
+        padding: 4px 20%;
+    }
+ 
+.home-body .adm-img{
+    background-image: url("images/slider1.jpg");
+    background-size: 100% 100%;
+    width: 6000px;
+    height: 500px;
+}
+.home-body .apply{
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 5px;
+    position: absolute;
+    left: 23%;
+    top: 397px;
+    transition: all 0.3s ease;
+}
+
+.home-body .join{
+    width: 100px;
+    position: absolute;
+    color:white;
+    background: rgb(44, 44, 164) !important;
+    font-size: 20px;
+    font-weight: 600;
+    background: none;
+    left: 10.8%;
+    top: 90px;
+    transition: all 0.3s ease;
+    }
+.course table{
+    width: 800px;
+    }
+    .bar i{
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width:1050px){
+    .college-name .name{
+    text-align: center;
+    font-size: 32px;
+    margin-left: -10px;
+    padding-top: 15px;
+    }
+    .college-name h6{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .slider-box{
+        margin-bottom: -40px;
+    }
+    .college-name .logo{
+        width: 200px; height: 150px;
+    }
+    .navbar .menu input{
+        padding: 3px;
+        margin-left: -50px;
+        width: 70%;
+    }
+    .home-body{
+        display: inline;
+    }
+    .home-body .adm-img{
+        width: 500px;
+    }
+    .home-body .join{
+        left: 122px;
+        top: 108px;
+    }
+    .home-body .apply{
+        width: 95px;
+        left: 273px;
+        top: 415px;
+    }
+    .course table{
+        margin-top: 17%;
+        width: 600px;
+    }
+    .event-slider{
+        width: 90%;
+        left: 5%;
+    }
+    .navbar{
+        background: none;
+    }
+    .navbar .menu{
+        position: absolute;
+        top: -510px;
+        right: 0;
+        padding-top: 20px;
+        width: 25%;
+        height: 250px;
+        background:rgb(86, 16, 165);
+        display: none;
+    }
+    .navbar .menu b{
+        color: white;
+        font-size: 25px;
+        float: right;
+        margin-top: -12px;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+    .navbar .menu b:hover{
+        color: red;
+    }
+    .navbar .menu li{
+        display: inline;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+    }
+    .navbar .menu li a:hover{
+        background-color: blue;
+    }
+    .navbar .menu input{
+        width: 30%;
+        margin-left: 20%;
+    }
+    
+.bar{
+    position: sticky;
+    top: 0;
+}
+.bar i{background-color:rgb(219, 195, 195);
+    border-radius: 5px;
+    float: right;
+    font-size: 35px;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    display:block;
+    cursor: pointer;
+}
+}
+    

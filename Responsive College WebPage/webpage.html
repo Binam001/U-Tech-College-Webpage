@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="webpage style.css">
+    <script src="script.js"></script>
+    <title>U-Tech Web Page</title>
+    <title>Responsive College WebPage</title>
+</head>
+<body> 
+    
+    
+    <div class="bar" onclick="bar()">
+    <i class="large material-icons">menu</i>
+</div>
+    <div class="college-name">
+        <div class="logo"></div>
+        <div class="name">UNITED TECHNICAL COLLEGE
+           
+            <h6>Estd.:2065</h6>
+            <h6>Affiliated to <a href="#">Pokhara University</a></h6>
+        </div>
+    </div>
+
+    <div class="slider-box">
+        <div class="image-slider">
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <ul class="menu" id="menu"><b onclick="menuclose()">X</b>
+            <li><a href="#">Home</a></li>
+            <li><a href="#admission">Admission</a></li>
+            <li><a href="#course">Courses</a></li>
+            <li><a href="#event">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><input type="text" placeholder="Search..."></li>
+        </ul>
+    </div>
+    
+    <div class="home-body">
+        <div class="adm-img"></div>
+        <a class="join"href="#admission">Join Us</a>
+        <a class="apply"href="#admission">APPLY NOW</a>
+        <div class="intro">
+        <h1>INTRODUCTION</h1>
+        <p>United Technical College, College of Engineering, popularly known as (U-TEC), was established in 2008 (2065 BS) under private sector initiative. The foundation of U-TEC was instigated by a group of farsighted professionals and academicians who comprehended the need of a college for offering the technical education outside the valley. Mostly, the university level engineering education in private sector was concentrated in the capital only. Therefore, for reaching a wider section of Nepali youth outside the valley and making the quality technical education accessible and affordable to the poor and deprived youths in outer region, it was essential to establish technical colleges outside the capital, which U-TEC did by establishing the first private engineering college in Chitwan. Since its establishment, the youths from outside the valley region have taken  full advantage and are continually enrolling in different engineering disciplines offered by the college.  Since the establishment the college has produced six batches of undergraduate engineers so far in Civil Engineering and three in Electrical & Electronics Engineering...<a href="#">Read More...</a></p>
+    
+        
+            <h1>MISSION</h1>
+            <ul>
+                <li>To provide students best opportunities and environment of learning and help them to attain high level of academic quality, scientific aspiration, technical and self-employment professional competence and skills.</li>
+                <li>To prepare and train students to serve the society and the people, enhance the design quality of engineering works and improve the life and to comprehend the need for ethical standards in personal, social and public life.</li>
+                <li>To help the students  to conduct  different types of research in engineering,  write research reports and  prepare  papers for presenting  in  conferences and seminars  in engineering and technology related  issues of national  and public interest.</li>
+                <li>To train the students for providing necessary technical and consultancy services as demanded by the government, private sectors, NGOs and INGOs.
+                <li>To enhance the knowledge and practical skills of the students by providing training in latest job oriented technology.</li>
+            </ul>
+            </div>
+    </div>
+    <div class="admission" id="admission">
+        <h1>Admission Open!!!</h1>
+        <b>Welcome to a next-generation university where you’ll have the freedom to create and then pursue your own academic goals.
+        </b>
+        <p>Admission open for M.Sc. in Construction Management, BE Civil, BE Electrical & Electronics and BE Computer
+            </p>
+            <h2>Online Application Form</h2>
+            <button onclick="applynow()">APPLY NOW</button>
+            <form id="adm-form">
+                
+            <div class="sicky-popup-bar">
+                <h2>Online Application Form</h2><b onclick="x()">X</b>
+            </div>
+                <span>Course Applied For:</span><br>
+                    <input class="be" type="radio" name="course">
+                    <label>M.Sc. in Construction Management</label><br>
+                    <input class="be" type="radio" name="course">
+                    <label>BE Civil</label><br>
+                    <input class="be"type="radio" name="course">
+                    <label>BE Electrical & Electronics</label><br>
+                    <input class="be"type="radio" name="course">
+                    <label>BE Computer</label><br>
+                Student's Name:<input type="text">
+                Date of Birth(B.S.):<input type="text">
+                Date of Birth(A.D.):<input type="text">
+                Father's Name:<input type="text">
+                Occupation:<input type="text">
+                Mobile No.:<input type="text">
+                Mother's Name:<input type="text">
+                Occupation:<input type="text">
+                Mobile No.:<input type="text">
+                Religion:<input type="text">
+                Ethnicity:<input type="text">
+                <h3>Parmanent Address:</h3>
+                Town/Village:<input type="text">
+                Ward No.:<input type="text">
+                District:<input type="text">
+                Zone:<input type="text">
+                Mailing Address:<input type="text">
+                <h3>SECONDARY EDUCATION EXAMINATION</h3>
+                Board:<input type="text">
+                Year:<input type="text">
+                Total GPA:<input type="text">
+                Total GPA Obtained:<input type="text">
+                Grade:<input type="text">
+                Symbol No.:<input type="text">
+                <h3>HIGHER SECONDARY EDUCATION EXAMINATION</h3>
+                Board:<input type="text">
+                Year:<input type="text">
+                Total GPA:<input type="text">
+                Total GPA Obtained:<input type="text">
+                Grade:<input type="text">
+                Symbol No.:<input type="text">
+                <h3>Others</h3>
+                Board:<input type="text">
+                Year:<input type="text">
+                Total GPA:<input type="text">
+                Total GPA Obtained:<input type="text">
+                Grade:<input type="text">
+                Symbol No.:<input type="text">
+                <h3>Please Upload Your PP Size Photo:</h3>
+                <input class="browse"type="button" value="Browse..."><br>
+                <input class="submit" type="button" value="SUBMIT">
+            </form>
+    </div>
+    
+
+    <div class="course" id="course">
+        <p>This course is designed for any student wishing to learn more about the field of engineering and some of the fundamental concepts from various engineering disciplines. A general knowledge of engineering and a number of design projects emphasizing team work, problem solving, and decision making in engineering design will be incorporated throughout the class. Students will be required to present designs using various communication techniques.</p>
+        <b>Program Offered:</b>
+        <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Program</th>
+            <th>Seats</th>
+            <th>Length</th>
+        </tr>
+        <tr>
+            <td><a href="#">M.Sc. In Construction Management</a></td>
+            <td>Master</td>
+            <td>15</td>
+            <td>2 Year</td>
+        </tr>
+        <tr>
+            <td><a href="#">BE In Civil Engineering </a></td>
+            <td>Bachelor</td>
+            <td>96</td>
+            <td>4 Year</td>
+        </tr>
+        <tr>
+            <td><a href="#">BE. In Electrical & Electronics Engineering</a></td>
+            <td>Bachelor</td>
+            <td>48</td>
+            <td>4 Year</td>
+        </tr>
+        <tr>
+            <td><a href="#">BE. In Computer Engineering</a></td>
+            <td>Bachelor</td>
+            <td>48</td>
+            <td>4 Year</td>
+        </tr>
+    </table>
+    </div>
+    
+    <div class="event" id="event">
+        <h1>EVENTS</h1>
+        <div class="eslider-box">
+            <div class="event-slider">
+    
+            </div>
+        </div>
+    </div>
+  
+    <div class="contact" id="contact">
+    
+    <div class="left-contact">
+    <b>Contact Us</b>
+    <ul>Please contact us if you have any queries
+        <li>Phone: +977-56-593782, 593931, 9855050860</li>
+        <li>Email: <a href="#">unitedtechnicalcollege@gmail.com</a></li>
+        <li>Email: <a href="#">info@unitedtechnicalcollege.edu.np</a></li>
+    </ul>
+    </div>
+    <div class="right-contact">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+    </div>
+    </div>  
+
+</body>
+</html>
